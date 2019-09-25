@@ -7,7 +7,7 @@ let daysList = ['Domingo','Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sab
 
 for(let i = 2014; i < 2050; i++) {
   let year = date.setFullYear(i);
-  if(daysList[date.getDay()] === 'Segunda') {
+  if(daysList[date.getDay()] === 'Domingo') {
     console.log(date.getFullYear());
   }
 }
