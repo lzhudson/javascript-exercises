@@ -1,13 +1,6 @@
 let year = 2020;
-if(year % 4 === 0) {
-  if(year % 100 !== 0) {
-    console.log(year + ' is leap.');
-  }
-} else {
-  if(year % 400 === 0) {
-    console.log(year + ' is leap.');
-
-  } else {
-    console.log(year + ' is not leap.');
-  }
+function isLeap(year) {
+  return year % 4 === 0 ? (year % 100 !== 0) : (year % 400 === 0);
 }
+console.log(isLeap(year) === true ? year + ' is leap' : year + ' is not leap.');
+console.log(isLeap(2021) === true ? year + ' is leap' : year + ' is not leap.')
