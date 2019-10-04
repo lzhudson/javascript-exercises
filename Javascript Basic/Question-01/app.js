@@ -1,4 +1,3 @@
-
 let date = new Date();
 let daysArray = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 let day = daysArray[date.getDay()];
