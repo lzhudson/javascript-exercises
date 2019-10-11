@@ -1,6 +1,5 @@
-let num = 20;
-if(num > 19) {
-  console.log((num - 19) * 3);
-} else {
-  console.log(num - 19);
+function calculateDifferenceBetween(num) {
+  return num > 19 ? (num - 19) * 3 : num - 19;
 }
+console.log(calculateDifferenceBetween(20));
+console.log(calculateDifferenceBetween(19));
