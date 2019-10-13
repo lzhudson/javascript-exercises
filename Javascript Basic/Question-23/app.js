@@ -9,3 +9,5 @@ function newSequence(string) {
   }
 }
 console.log(newSequence('Hudson'));
+console.log(newSequence('abc'));
+console.log(newSequence('ab'));
