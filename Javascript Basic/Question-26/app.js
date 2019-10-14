@@ -3,11 +3,11 @@ function addThreeStringsEndInFront(string) {
     return string;
    
   } else {
-    let threeStringEnd = string.slice(string.length - 3, string.length);
-    let newString = threeStringEnd + string.slice(0, string.length - 3);
-    return newString;
+    var threeStringEnd = string.slice(string.length - 3, string.length);
+    return threeStringEnd + string.slice(0, string.length - 3);
   }
   
 }
 console.log(addThreeStringsEndInFront('Hudson'));
+console.log(addThreeStringsEndInFront('Hud'));
 console.log(addThreeStringsEndInFront('Unstoppable'));
