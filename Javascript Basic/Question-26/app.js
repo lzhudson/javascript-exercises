@@ -4,7 +4,7 @@ function addThreeStringsEndInFront(string) {
    
   } else {
     var threeStringEnd = string.slice(string.length - 3, string.length);
-    return threeStringEnd + string.slice(0, string.length - 3);
+    return threeStringEnd + string.slice(0, string.length - 3) + threeStringEnd;
   }
   
 }
