@@ -1,9 +1,5 @@
 function initStringJava(string) {
-  if(string.slice(0,4) === 'Java') {
-    return true;
-  } else {
-    return false;
-  }
+  return string.slice(0,4) === 'Java' ? true : false;
 }
 console.log(initStringJava('Javascript'));
 console.log(initStringJava('Java'));
