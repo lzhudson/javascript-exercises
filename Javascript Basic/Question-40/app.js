@@ -1,6 +1,6 @@
 function verifySum8OrDiference8(num1, num2) {
   const sumNumbers = num1 + num2;
-  const difNumbers = num1 - num2;
+  const difNumbers = Math.abs(num1 - num2);
   if(num1 === 8 || num2 === 8 || sumNumbers === 8 || difNumbers === 8) {
     return true;
   } else {
