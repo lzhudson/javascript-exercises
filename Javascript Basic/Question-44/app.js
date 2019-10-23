@@ -1,7 +1,7 @@
 function checkEqual20Numbers(num1, num2, num3){
-  if((num1 >= 20 && num1 < num2) || (num1 >= 20 && num1 < num3) ||
-     (num2 >= 20 && num2 < num3) || (num2 >= 20 && num2 < num3) ||
-     (num3 >= 20 && num3 < num2) || (num3 >= 20 && num3 < num1)){
+  if((num1 >= 20 && (num1 < num2 || num1 < num3)) ||
+     (num2 >= 20 && (num2 < num3 ||  num2 < num1)) ||
+     (num3 >= 20 && (num3 < num2 || num3 < num1))){
        return true;
   } else {
     return false;

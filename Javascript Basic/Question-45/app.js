@@ -1,7 +1,5 @@
 function checkEqualorDifferenceorSome(num1 ,num2) {
-  if(num1 === 15 || num2 === 15 || (num1 + num2) === 15 || (num1 - num2) === 15) {
-    return true;
-  }
+  return num1 === 15 || num2 === 15 || (num1 + num2) === 15 || Math.abs(num1 - num2) === 15
 }
 console.log(checkEqualorDifferenceorSome(15, 10));
 console.log(checkEqualorDifferenceorSome(10, 15));

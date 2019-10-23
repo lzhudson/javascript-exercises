@@ -1,16 +1,7 @@
 function checkRightNumbersEqual(num1,num2, num3) {
-  let numOne = num1.toString().split('');
-  let numTwo = num2.toString().split('');
-  let numThree = num3.toString().split('');
-  if(
-    (numOne[numOne.length - 1] === numTwo[numTwo.length - 1]) || 
-    (numThree[numThree.length - 1] === numThree[numThree.length - 1]) || 
-    (numThree[numThree.length - 1] === numTwo[numTwo.length - 1]) || 
-    (numOne[numOne.length - 1] === numTwo[numTwo.length - 1] && numOne[numOne.length - 1] === numThree[numThree.length - 1])) {
-      return true
-    } else {
-      return false;
-    }
+  return (num1 % 10 === num2 % 10) ||
+         (num2 % 10 === num3 % 10) ||
+         (num1 % 10 === num3 % 10);
 }
 console.log(checkRightNumbersEqual(30,30,30));
 console.log(checkRightNumbersEqual(20, 35, 20));
